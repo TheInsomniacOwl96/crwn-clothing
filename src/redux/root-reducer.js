@@ -1,0 +1,9 @@
+// Base reducer Object
+
+import { combineReducers } from "redux";
+
+import userReducer from "./user/user.reducer";
+
+export default combineReducers({
+  user: userReducer
+});

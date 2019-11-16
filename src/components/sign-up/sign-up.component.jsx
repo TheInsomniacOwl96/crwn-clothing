@@ -41,7 +41,7 @@ class SignUp extends React.Component {
         email: "",
         password: "",
         confirmPassword: ""
-      });
+      }); // resetting form
     } catch (error) {
       console.error(error);
     }
