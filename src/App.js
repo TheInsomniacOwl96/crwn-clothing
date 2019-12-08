@@ -17,6 +17,7 @@ import { selectCurrentUser } from "./redux/user/user.selectors";
 import { createStructuredSelector } from "reselect";
 
 import CheckoutPage from "./pages/checkout/checkout.component";
+
 // const HatsPage = () => (
 //   <div>
 //     <h1>HATS PAGE</h1>
@@ -49,9 +50,14 @@ class App extends React.Component {
 
           //console.log(this.state);
         });
-      } else {
-        setCurrentUser(userAuth);
       }
+
+      setCurrentUser(userAuth);
+      // addCollectionAndDocuments(
+      //   "collections",
+      //   collectionsArray.map(({ title, items }) => ({ title, items }))
+      // );
+
       //this.setState({ currentUser: user });
       // createUserProfileDocument(user);
       //console.log(user);
